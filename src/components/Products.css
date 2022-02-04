@@ -1,0 +1,65 @@
+.Products {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.Products,
+img {
+  margin: 10px;
+}
+
+.buttonAdd {
+  margin: 10px;
+  width: 6em;
+  height: 2em;
+  border-radius: 30em;
+  font-size: 10px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.buttonAdd::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0fd850),
+    to(#f9f047)
+  );
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.buttonAdd:hover::before {
+  width: 9em;
+}
+
+.nombre{
+  width: 50px;
+}
+
+.imagenn{
+  width: 50px;
+  margin: 20px;
+}

@@ -1,0 +1,107 @@
+.ShoppingCart {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px rgb(255, 160, 43);
+  border-radius: 10%;
+  background: rgb(255, 228, 196);
+  background: rgb(255, 228, 196);
+  background: -moz-linear-gradient(
+    75deg,
+    rgba(255, 228, 196, 1) 29%,
+    rgba(255, 193, 119, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    75deg,
+    rgba(255, 228, 196, 1) 29%,
+    rgba(255, 193, 119, 1) 100%
+  );
+  background: linear-gradient(
+    75deg,
+    rgba(255, 228, 196, 1) 29%,
+    rgba(255, 193, 119, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe4c4",endColorstr="#ffc177",GradientType=1);
+  box-shadow: 51px 43px 51px 25px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 51px 43px 51px 25px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 51px 43px 51px 25px rgba(0, 0, 0, 0.65);
+}
+
+.contaierShopping {
+  width: 85%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.productosShopping {
+  width: 50%;
+  height: 100%;
+}
+
+.carritoShopping {
+  width: 50%;
+  height: 100%;
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 30%;
+}
+
+/* From cssbuttons.io by @adamgiebl */
+.clearCart {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ff0072;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.clearCart:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ff0072;
+  z-index: -1;
+}
+
+.clearCart:hover,
+.clearCart:focus {
+  color: white;
+}
+
+.clearCart:hover:before,
+.clearCart:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.clearCart:active {
+  transform: scale(0.9);
+}
+
+
